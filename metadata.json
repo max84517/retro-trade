@@ -1,0 +1,5 @@
+{
+  "name": "RetroTrade - Stock Replay Simulator",
+  "description": "A historical stock trading simulator allowing users to replay market data, buy/sell assets, and test strategies with adjustable time controls.",
+  "requestFramePermissions": []
+}
