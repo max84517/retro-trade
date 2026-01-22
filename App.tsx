@@ -199,9 +199,9 @@ const App: React.FC = () => {
       {/* 2. Main Layout: Dashboard Grid */}
       <main className="flex-grow p-4 md:p-6 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-6">
         
-        {/* Left: Chart Area (Takes 8 cols) */}
-        <div className="lg:col-span-8 flex flex-col gap-4 min-h-[500px] lg:min-h-0">
-          <div className="flex-grow bg-gray-900/50 rounded-2xl border border-gray-800 p-1 relative overflow-hidden flex flex-col">
+        {/* Left: Chart Area (Takes 9 cols now) */}
+        <div className="lg:col-span-9 flex flex-col gap-4">
+          <div className="h-[400px] lg:h-[600px] bg-gray-900/50 rounded-2xl border border-gray-800 p-1 relative overflow-hidden flex flex-col">
              {/* Chart Header Overlay */}
              <div className="absolute top-4 left-4 z-10 flex flex-col gap-1">
                 <div className="flex items-baseline gap-3 bg-gray-900/80 backdrop-blur px-3 py-1 rounded-lg border border-gray-800/50">
@@ -240,8 +240,8 @@ const App: React.FC = () => {
           </div>
         </div>
 
-        {/* Right: Command Center (Takes 4 cols) */}
-        <div className="lg:col-span-4 flex flex-col gap-4">
+        {/* Right: Command Center (Takes 3 cols now) */}
+        <div className="lg:col-span-3 flex flex-col gap-4">
           
           {/* A. Market Status Card */}
           <div className="bg-gray-900 rounded-xl p-5 border border-gray-800 shadow-sm flex flex-col gap-1">
@@ -249,8 +249,8 @@ const App: React.FC = () => {
                 <span className="text-xs text-gray-500 uppercase font-semibold">Current Price</span>
                 <span className="text-xs text-gray-500 font-mono">{currentDayData ? currentDayData.date : '--/--/--'}</span>
              </div>
-             <div className="flex items-baseline gap-2">
-                <span className="text-4xl font-mono text-white font-medium">
+             <div className="flex items-baseline gap-2 flex-wrap">
+                <span className="text-3xl xl:text-4xl font-mono text-white font-medium">
                   ${currentDayData?.close.toFixed(2) || '0.00'}
                 </span>
                 {currentDayData && (
