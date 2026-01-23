@@ -18,8 +18,7 @@ export default defineConfig(({ mode }) => {
 
     // ⚠️ 先保留你原本寫法（但我下面會教你更正統安全的方式）
     define: {
-      'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-      'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
+      // No active environment variables currently used
     },
 
     resolve: {

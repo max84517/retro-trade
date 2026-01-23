@@ -23,11 +23,7 @@ A React application for simulating stock trading replays.
    ```
 
 3. Configure Environment Variables:
-   - Create a `.env` file in the root directory.
-   - Add your Gemini API key (if required):
-     ```
-     GEMINI_API_KEY=your_api_key_here
-     ```
+   - Create a `.env` file in the root directory (optional, currently no required variables).
 
 4. Start the development server:
    ```bash
