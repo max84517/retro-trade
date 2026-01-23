@@ -30,6 +30,7 @@ export enum SimulationStatus {
 
 export enum Speed {
   X1 = 1,
-  X2 = 2,
+  X3 = 3,
   X5 = 5,
+  X10 = 10,
 }
